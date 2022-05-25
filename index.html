@@ -27,8 +27,8 @@
 
             <a-assets>
                  <a-asset-item
-                    id="animated-asset_david"
-                    src="assets/asset_david.glb"
+                    id="animated-asset_person"
+                    src="assets/asset_person.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -60,10 +60,8 @@
             </a-marker>
 
             <a-marker
-                id="animated-marker_david"
-                type="pattern"
-                preset="custom"
-                url="assets/marker_david.patt"
+                id="animated-marker_person"
+                preset="hiro"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
@@ -73,7 +71,7 @@
                     id="bowser-model"
                     scale="2.1222429874500174 2.1222429874500174 2.1222429874500174"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset_david"
+                    gltf-model="#animated-asset_person"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
