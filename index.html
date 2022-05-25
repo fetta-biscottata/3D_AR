@@ -27,8 +27,8 @@
 
             <a-assets>
                  <a-asset-item
-                    id="animated-asset_person"
-                    src="assets/asset_person.glb"
+                    id="animated-asset_vaso"
+                    src="assets/asset_vaso.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -47,7 +47,6 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
             >
                 <a-entity
                     id="bowser-model"
@@ -60,18 +59,19 @@
             </a-marker>
 
             <a-marker
-                id="animated-marker_person"
-                preset="hiro"
+                id="animated-marker_vaso"
+                type="pattern"
+                preset="custom"
+                url="assets/marker_vaso.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
             >
                 <a-entity
                     id="bowser-model"
                     scale="2.1222429874500174 2.1222429874500174 2.1222429874500174"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset_person"
+                    gltf-model="#animated-asset_vaso"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
@@ -85,7 +85,6 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
             >
                 <a-entity
                     id="bowser-model"
